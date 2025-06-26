@@ -1,0 +1,5 @@
+
+backend/node_modules
+Frontend/frontend/node_modules
+requests.log
+LoggingMiddleware/node_modules
