@@ -3,7 +3,6 @@ const fs = require('fs');
 const app = express();
 const PORT = 3000;
 
-// Middleware for logging
 app.use((req, res, next) => {
   const start = Date.now();
 
@@ -12,7 +11,7 @@ app.use((req, res, next) => {
     const log = `[${new Date().toISOString()}] ${req.method} ${req.originalUrl} - ${res.statusCode} - ${duration}ms\n`;
     
     console.log(log);
-    fs.appendFileSync('requests.log', log); // Save to file
+    fs.appendFileSync('requests.log', log); 
   });
 
   next();
