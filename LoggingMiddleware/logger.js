@@ -19,9 +19,9 @@ async function log(stack, level, packageName, message, token) {
         }
       }
     );
-    console.log('✅ Log success:', response.data);
+    console.log('Log success:', response.data);
   } catch (error) {
-    console.error('❌ Log error:', error.response?.data || error.message);
+    console.error('Log error:', error.response?.data || error.message);
   }
 }
 
